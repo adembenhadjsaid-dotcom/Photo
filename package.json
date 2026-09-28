@@ -1,0 +1,7 @@
+{
+  "name": "photo-to-drive",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": { "test": "node --test", "dev": "vercel dev" },
+  "engines": { "node": ">=20" }
+}

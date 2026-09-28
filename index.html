@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#171e2a">
+  <meta name="description" content="التقط صورة وأرسلها بموافقتك.">
+  <title>شارك صورتك</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <main class="card">
+    <div class="badge">✦ مشاركة صورة</div>
+    <h1>خلّينا ناخذوا صورة 📷</h1>
+    <p class="intro">إذا تحب، افتح الكاميرا، شوف صورتك، وبعد اختار إذا تحب تبعثها. التصوير والإرسال يصيروا كان بموافقتك.</p>
+
+    <div class="frame" id="frame">
+      <video id="camera" autoplay playsinline muted hidden></video>
+      <img id="preview" alt="معاينة الصورة الملتقطة" hidden>
+      <div class="placeholder" id="placeholder" aria-hidden="true"><span>📸</span><small>صورتك تظهر هنا</small></div>
+    </div>
+
+    <div class="actions">
+      <button id="start" class="primary" type="button">افتح الكاميرا</button>
+      <button id="capture" class="primary" type="button" hidden>التقط صورة</button>
+      <button id="retry" class="secondary" type="button" hidden>عاود التصوير</button>
+      <button id="send" class="primary" type="button" hidden>نوافق نبعث صورتي</button>
+    </div>
+    <div id="turnstile-container" hidden></div>
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+    <p class="privacy">🔒 الصفحة ما تصوّركش وحدها. تنجم تسكّر الكاميرا أو تخرج في أي وقت. الصورة المرسلة تُحفظ في Google Drive لصاحب الرابط.</p>
+  </main>
+  <script defer src="/app.js"></script>
+</body>
+</html>
